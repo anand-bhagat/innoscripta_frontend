@@ -12,4 +12,4 @@ const HomePageComponent = () => {
 	);
 };
 
-export default withAuth(HomePageComponent);
+export default HomePageComponent;
