@@ -7,6 +7,7 @@ import Loader from '../../components/Loader/Loader';
 import { useEffect } from 'react';
 import { searchAndFilterArticles } from '../../state/article/articleActions';
 import ArticleList from '../../components/ArticleList/ArticleList';
+import withAuth from '../../hoc/withAuth'
 
 const FeedPage = () => {
 	const [category, setCategory] = useState('all');
@@ -71,4 +72,4 @@ const FeedPage = () => {
 	)
 }
 
-export default FeedPage
+export default withAuth(FeedPage)
